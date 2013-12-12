@@ -7,12 +7,21 @@
 //
 
 #import "TUTAppDelegate.h"
+#import "TUTConfiguration.h"
 
 @implementation TUTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // Fetch the current CONFIGURATION
+
+    NSLog(@"Current Configuration: %@", [TUTConfiguration configuration]);
+    NSLog(@"Current GA Code: %@", [TUTConfiguration CAMGoogleAnalyticsCode]);
+    NSLog(@"Current Flurry Code: %@", [TUTConfiguration CAMFlurryCode]);
+    NSLog(@"Current API URL: %@", [TUTConfiguration CAMurl]);
+    
     return YES;
 }
 							
