@@ -23,6 +23,8 @@
 		4A341691185A6A820005411A /* TUTBuildConfigurationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A341690185A6A820005411A /* TUTBuildConfigurationsTests.m */; };
 		4A3416A1185A76DE0005411A /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A3416A0185A76DE0005411A /* Configurations.plist */; };
 		4A3416A4185A78490005411A /* TUTConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3416A3185A78490005411A /* TUTConfiguration.m */; };
+		4A3416AF185A89000005411A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3416AD185A89000005411A /* icon.png */; };
+		4A3416B0185A89010005411A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3416AE185A89000005411A /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		4A3416A0185A76DE0005411A /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
 		4A3416A2185A78490005411A /* TUTConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTConfiguration.h; sourceTree = "<group>"; };
 		4A3416A3185A78490005411A /* TUTConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTConfiguration.m; sourceTree = "<group>"; };
+		4A3416AD185A89000005411A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4A3416AE185A89000005411A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 				4A34167D185A6A820005411A /* Images.xcassets */,
 				4A3416A5185A78510005411A /* Models */,
 				4A3416A6185A78680005411A /* Controllers */,
+				4A3416B1185A89090005411A /* Images */,
 				4A34166C185A6A820005411A /* Supporting Files */,
 			);
 			path = TUTBuildConfigurations;
@@ -174,6 +179,15 @@
 				4A34167B185A6A820005411A /* TUTViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4A3416B1185A89090005411A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4A3416AD185A89000005411A /* icon.png */,
+				4A3416AE185A89000005411A /* icon@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A34167E185A6A820005411A /* Images.xcassets in Resources */,
+				4A3416AF185A89000005411A /* icon.png in Resources */,
 				4A3416A1185A76DE0005411A /* Configurations.plist in Resources */,
 				4A341670185A6A820005411A /* InfoPlist.strings in Resources */,
 				4A341679185A6A820005411A /* Main.storyboard in Resources */,
+				4A3416B0185A89010005411A /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
