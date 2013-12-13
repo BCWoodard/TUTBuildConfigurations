@@ -1,7 +1,11 @@
-Easily Change iOS Build Configurations
+iOS Build Configurations
+======================
+Changing iOS Build Configurations Easily to Accommodate Multiple Environments
+This code is based on the Mobile Tuts+ tutorial: http://bit.ly/1b2k2Mk
+
 ======================
 
-This code is based on the Mobile Tuts+ tutorial: http://bit.ly/1b2k2Mk
+
 
 The Challenge
 ======================
