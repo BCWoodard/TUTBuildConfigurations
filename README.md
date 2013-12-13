@@ -1,19 +1,24 @@
-TUTBuildConfigurations
+Easily Change iOS Application Build Configurations
 ======================
 
-This code is based on the Mobile Tuts+ tutorial located here: http://bit.ly/1b2k2Mk
+This code is based on the Mobile Tuts+ tutorial: http://bit.ly/1b2k2Mk
 
 The Challenge
 ======================
-Developers often work in multiple environments at the same time or need to use different variables (URLs, Analytics codes, etc.) for the development, staging and production environments. Many iOS developers use a "constants" file to define the different variables and then manually update their code to switch out these variables prior to distribution based on the configuration they are building. While this works for smaller projects with a limited number of variables, the opportunity to overlook a change or variable is always there - not to mention trying to remember which variables need to be changed and when. This solution seeks to resolve this manual process by leveraging the ability to customize configurations in Xcode.
+Developers often work in multiple environments at the same time or need to use different variables (URLs, Analytics codes, etc.) for the development, staging and production environments. How do you create a simple, effective way to quickly change your build configuration and all of the associated variables each configuration requires?
+
+Many iOS developers use a "constants" file to define the QA or PROD variables and then manually update their code to switch out these variables prior to distribution. While this works for smaller projects with a limited number of variables, the opportunity to overlook a change or variable is always there - not to mention trying to remember which variables need to be changed and when. This is a pain!
+
+This solution seeks to resolve this manual process by leveraging the ability to customize schemes and configurations in Xcode. Properly implemented, this approach allows you to change your build configuration by simply selecting the desired scheme from the drop-down list prior to running the application. Simple!
 
 The Approach
 ======================
-1. In order to differentiate between builds, we need to know the current configuration. Xcode allows you to add or edit configurations within the Project Navigator (from the INFO tab). Once you have added your different environments to the Configuration panel, you need to make each configuration available to the application at runtime. You accomplish this by editing the -Info.plist file and adding the key "Configuration" and value ${CONFIGURATION}. You capture the configuration within your app using the following code:
+1. In order to differentiate between builds, we need to know the current configuration. Xcode allows you to add or edit configurations within the Project Navigator (from the INFO tab). Once you have added your different environments to the Configuration panel, you need to make each configuration available to the application at runtime. You accomplish this by editing the -Info.plist file and adding the key "Configuration" and value ${CONFIGURATION}. 
 
+You capture the configuration within your app using the following code:
     NSString *configuration = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"Configuration"];
 
-2.  Next create custom Xcode schemes for each of the configurations you defined.
+2.  Next create custom Xcode schemes for each of your environments and assign each the corresponding configuration you just defined in the Info panel.
 
 3.  Now you need a way to differentiate variables between the configurations you've created. This is done by creating a configuration file. In this example, we use a Property List. The .plist contains dictionaries for each of our configurations (development, production, etc.) and key/value pairs for each of the build specific variables we need. For example, Google Analytics or Flurry codes, APIs, FacebookIDs, etc.
 
