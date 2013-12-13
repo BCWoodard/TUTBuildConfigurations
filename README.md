@@ -39,7 +39,8 @@ The Approach
 
 4.  The final step is to create a Configuration Class that interprets which configuration the build was initiated with and read the corresponding variables from our Configurations.plist.
 
-5.  To implement the solution, you simply need to import the Configuration Class into the file which requires any of these multi-option variables. When any of these variables needs assignment, you simply assign it the value from our Configuration Class:             
+5.  To implement the solution, you simply need to import the Configuration Class into the file which requires any of these multi-option variables. When you need to reference any of these environment-dependent variables, you just call the value from our Configuration Class:
+ 
                 NSString *googleAnalyticsCode = [ConfigurationClass GACode];
 
 Once the code is implemented, switching between build configurations is as simple as changing the scheme - literally a simple select from the scheme drop-down - before running your app.
