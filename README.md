@@ -1,4 +1,4 @@
-Easily Change iOS Application Build Configurations
+Change iOS Build Configurations
 ======================
 
 This code is based on the Mobile Tuts+ tutorial: http://bit.ly/1b2k2Mk
