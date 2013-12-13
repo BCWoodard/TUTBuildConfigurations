@@ -22,20 +22,20 @@ The Approach
 
 3.  Now you need a way to differentiate variables between the configurations you've created. This is done by creating a configuration file. In this example, we use a Property List. The .plist contains dictionaries for each of our configurations (development, production, etc.) and key/value pairs for each of the build specific variables we need. For example, Google Analytics or Flurry codes, APIs, FacebookIDs, etc.
 
-Essentially your configurations dictionary will look something like this:
-
-        {
-          {"development": {
-            "GACode":"DevGoogleCode",
-            "FlurryCode":"DevFlurryCode",
-            "API":"http://dev.webapi.com"},
-          }
-          {"production": {
-            "GACode":"ProdGoogleCode",
-            "FlurryCode":"ProdFlurryCode",
-            "API":"http://prod.webapi.com"},
-          }
-        }
+        Essentially your configurations dictionary will look something like this:
+        
+                {
+                  {"development": {
+                    "GACode":"DevGoogleCode",
+                    "FlurryCode":"DevFlurryCode",
+                    "API":"http://dev.webapi.com"},
+                  }
+                  {"production": {
+                    "GACode":"ProdGoogleCode",
+                    "FlurryCode":"ProdFlurryCode",
+                    "API":"http://prod.webapi.com"},
+                  }
+                }
 
 4.  The final step is to create a Configuration Class that interprets which configuration the build was initiated with and read the corresponding variables from our Configurations.plist.
 
