@@ -25,6 +25,7 @@
 		4A3416A4185A78490005411A /* TUTConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3416A3185A78490005411A /* TUTConfiguration.m */; };
 		4A3416AF185A89000005411A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3416AD185A89000005411A /* icon.png */; };
 		4A3416B0185A89010005411A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3416AE185A89000005411A /* icon@2x.png */; };
+		4A471E6F18772BB800E3B0F7 /* Add-Custom-Configuration-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A471E6E18772BB800E3B0F7 /* Add-Custom-Configuration-1.png */; };
 		4A811A0F185B72BF0076214E /* Tutorial-Info in Resources */ = {isa = PBXBuildFile; fileRef = 4A811A0E185B72BF0076214E /* Tutorial-Info */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		4A3416A3185A78490005411A /* TUTConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTConfiguration.m; sourceTree = "<group>"; };
 		4A3416AD185A89000005411A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4A3416AE185A89000005411A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		4A471E6E18772BB800E3B0F7 /* Add-Custom-Configuration-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add-Custom-Configuration-1.png"; sourceTree = "<group>"; };
 		4A811A0E185B72BF0076214E /* Tutorial-Info */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Tutorial-Info"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,10 +189,19 @@
 		4A3416B1185A89090005411A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4A471E6D18772BB800E3B0F7 /* Screenshots */,
 				4A3416AD185A89000005411A /* icon.png */,
 				4A3416AE185A89000005411A /* icon@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		4A471E6D18772BB800E3B0F7 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				4A471E6E18772BB800E3B0F7 /* Add-Custom-Configuration-1.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 				4A3416A1185A76DE0005411A /* Configurations.plist in Resources */,
 				4A811A0F185B72BF0076214E /* Tutorial-Info in Resources */,
 				4A341670185A6A820005411A /* InfoPlist.strings in Resources */,
+				4A471E6F18772BB800E3B0F7 /* Add-Custom-Configuration-1.png in Resources */,
 				4A341679185A6A820005411A /* Main.storyboard in Resources */,
 				4A3416B0185A89010005411A /* icon@2x.png in Resources */,
 			);
