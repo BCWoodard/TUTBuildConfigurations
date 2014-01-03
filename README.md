@@ -20,6 +20,7 @@ The Approach
 1. In order to differentiate between builds, we need to know the current configuration. Xcode allows you to add or edit configurations within the Project Navigator (from the INFO tab). Once you have added your different environments to the Configuration panel, you need to make each configuration available to the application at runtime. You accomplish this by editing the -Info.plist file and adding the key "Configuration" and value ${CONFIGURATION}. 
 
 [TUTBuildConfigurations](TUTBuildConfigurations/TUTBuildConfigurations/Screenshots/Add-Custom-Configuration-1.png)
+
         You capture the configuration within your app using the following code:
         NSString *configuration = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"Configuration"];
 
